@@ -5,24 +5,28 @@ import org.junit.jupiter.api.Test;
 
 public class LeapYearTest {
 
+
     @Test
-    public void check_leapYearDiv400_true(){
-        int year = 2000;
-        boolean result = LeapYear.check(year);
-        Assertions.assertTrue(result);
+    public void isLeapYear_yearNonDivisibleBy4_false() {
+        boolean actual = LeapYear.isLeapYear(1);
+        Assertions.assertFalse(actual);
     }
 
     @Test
-    public void check_leapYearDiv4AndNotDiv100_true(){
-        int year = 2020;
-        boolean result = LeapYear.check(year);
-        Assertions.assertTrue(result);
+    public void isLeapYear_yearDivisibleBy4_true() {
+        boolean actual = LeapYear.isLeapYear(4);
+        Assertions.assertTrue(actual);
     }
 
     @Test
-    public void check_nonLeapYear_false(){
-        int year = 2014;
-        boolean result = LeapYear.check(year);
-        Assertions.assertFalse(result);
+    public void isLeapYear_yearDivisibleBy100_false() {
+        boolean actual = LeapYear.isLeapYear(100);
+        Assertions.assertFalse(actual);
+    }
+
+    @Test
+    public void isLeapYear_yearDivisibleBy400_true() {
+        boolean actual = LeapYear.isLeapYear(400);
+        Assertions.assertTrue(actual);
     }
 }
