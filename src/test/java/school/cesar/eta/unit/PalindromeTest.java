@@ -13,7 +13,7 @@ public class PalindromeTest {
     }
 
     @Test
-    public void check_notPalindromeWord_false() {
+    public void check_nonPalindromeWord_false() {
         String word = "ABC";
         boolean result = Palindrome.check(word);
         Assertions.assertFalse(result);
