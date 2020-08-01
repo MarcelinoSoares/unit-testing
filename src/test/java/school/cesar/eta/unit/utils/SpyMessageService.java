@@ -1,7 +1,5 @@
 package school.cesar.eta.unit.utils;
 
-import school.cesar.eta.unit.FakeMessageService;
-
 public class SpyMessageService extends FakeMessageService {
 
     public int contCalls = 0;

@@ -1,4 +1,6 @@
-package school.cesar.eta.unit;
+package school.cesar.eta.unit.utils;
+
+import school.cesar.eta.unit.MessageService;
 
 public class FakeMessageService extends MessageService {
     @Override

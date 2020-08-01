@@ -3,6 +3,7 @@ package school.cesar.eta.unit;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import school.cesar.eta.unit.utils.FakeMessageService;
 import school.cesar.eta.unit.utils.MessageServiceMock;
 import school.cesar.eta.unit.utils.SpyMessageService;
 
