@@ -6,7 +6,6 @@
 - Disciplina: Testes Unitários
 - Professor: [@miltonmc](https://github.com/miltonmc) Milton Castro
 
-
 ### Environment & Tools:
 - Java 11
 - Jetbrains IntelliJ
